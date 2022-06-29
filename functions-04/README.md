@@ -1,0 +1,6 @@
+# Functions 4
+In this task, we have an array of names, and we're using Array.filter() to get an array of only names shorter than 5 characters. The filter is currently being passed a named function isShort() which checks the length of the name, returning true if the name is less than 5 characters long, and false otherwise.
+
+We'd like you to change this into an arrow function. See how compact you can make it.
+
+Link to exercise: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Functions#functions_4
