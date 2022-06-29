@@ -68,8 +68,9 @@
       }
 
       const btn = document.querySelector('button');
-      btn.addEventListener('click', () => displayMessage('Woo, this is a different message!'));
-
+      btn.addEventListener('click', () => displayMessage('Your inbox is almost full — delete some mails', 'warning'));
+      // Optional message for msgType 'chat'
+      // btn.addEventListener('click', () => displayMessage('Brian: Hi there, how are you today?','chat'));
     </script>
   </body>
 </html>
