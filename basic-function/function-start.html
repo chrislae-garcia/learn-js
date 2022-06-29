@@ -54,7 +54,8 @@
         panel.parentNode.removeChild(panel));
       }
 
-      displayMessage();
+      const btn = document.querySelector('button');
+      btn.addEventListener('click', displayMessage);
 
     </script>
   </body>
