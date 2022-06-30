@@ -30,6 +30,18 @@
     const para = document.createElement('p');
 
     // Add your code here
+    function chooseName() {
+      // Get the length of the array names
+      let length = names.length;
+
+      // Generate a random number between 0 and the length of the array names
+      let item = Math.floor((Math.random() * length) + 0);
+      
+      // Display the item from the array
+      para.textContent = names[item];
+    }
+    // Call the chooseName() function
+    chooseName();
 
     // Don't edit the code below here!
 
