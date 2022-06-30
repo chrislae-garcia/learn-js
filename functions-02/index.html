@@ -42,6 +42,23 @@
     const color = 'blue';
 
     // Add your code here
+    function drawRect(){
+      // Get the style of the <canvas> element
+      const canvas = document.querySelector('canvas');
+      const style = getComputedStyle(canvas);
+      // Get the weight and the height of the <canvas>
+      const canvasWidth = style.width;
+      const canvasHeight = style.height;
+      
+      // Clear the rectangle <canvas>
+      ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+      ctx.beginPath();
+      ctx.fillStyle = color;
+      ctx.fillRect(x, y, width, height);
+      ctx.stroke();
+    }
+    // Call the  drawRect() function
+    drawRect();
 
     // Don't edit the code below here!
 
