@@ -21,14 +21,17 @@
     const input = document.querySelector('.numberInput');
     const para = document.querySelector('p');
 
+    // A square is a number raised to the power of 2.
     function squared(num) {
       return num ** 2;
     }
 
+    // A cube is a number raised to the power of 3.
     function cubed(num) {
       return num ** 3;
     }
 
+    // Factorial is the product of all positive integers less than or equal to a given positive integer and denoted by that integer and an exclamation point.
     function factorial(num) {
       if (num < 0) return undefined;
       if (num == 0) return 1;
@@ -43,12 +46,16 @@
       return num;
     }
 
+    // Change event listener for the input field.
     input.addEventListener('change', () => {
       const num = parseFloat(input.value);
 
+      // Verify if the input is a valid number.
       if (isNaN(num)) {
+        // Display warning to enter a valid number.
         para.textContent = 'You need to enter a number!';
       } else {
+        // Concatenate and display the square, cube, and factorial results of the number.
         para.textContent = `${num} squared is ${squared(num)}. `;
         para.textContent += `${num} cubed is ${cubed(num)}. `;
         para.textContent += `${num} factorial is ${factorial(num)}. `;
