@@ -27,6 +27,12 @@
       return (exponent > 0) ? true : false;
     }
 
-    pow(base, exponent);
+    // Display the result
+    function displayResult() {
+      (isPositive() == true) ? alert(`The result of ${base} raised to the power of ${exponent} is ${pow(base, exponent)}`)
+      : alert(`Exponent ${exponent} is a negative number. Please use a positive integer.`);
+    }
+
+    displayResult();
 </script>
 </html>
