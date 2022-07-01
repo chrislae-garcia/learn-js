@@ -12,6 +12,16 @@
     const base = parseInt(prompt('Please input base:'));
     const exponent = parseInt(prompt('Please input exponent:'));
     
+    // Check if the exponent is a positive number
+    // If the exponent is negative, display warning message
+    if (exponent < 0) {
+      alert(`Exponent ${exponent} is a negative number. Please use a positive integer.`);
+    
+    //Otherwise, execute the pow() function
+    } else { 
+      pow(base, exponent);
+    }
+    
     // Calculate the base and the exponent
     function pow(x,n){
       let result = 1;
@@ -19,20 +29,9 @@
       for (let i = 0; i < n; i++){
         result *= x; // Shorthand for result = result * base
       }
-      return result;
+      // Display final results
+      alert(`The result of ${base} raised to the power of ${exponent} is ${result}.`);
     }
 
-   // Check if the exponent is a positive number
-   function isPositive(){
-      return (exponent > 0) ? true : false;
-    }
-
-    // Display the result
-    function displayResult() {
-      (isPositive() == true) ? alert(`The result of ${base} raised to the power of ${exponent} is ${pow(base, exponent)}`)
-      : alert(`Exponent ${exponent} is a negative number. Please use a positive integer.`);
-    }
-
-    displayResult();
 </script>
 </html>
