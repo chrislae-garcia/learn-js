@@ -25,8 +25,15 @@
       return capFirst + otherChars;
     }
 
+    // Takes the last letter of a string
+    function lastLetter(word) {
+      const lastChar = word.slice(-1);
+
+      return lastChar;
+    }
+
     // Output the result to the console
-    console.log(capitalize('random word'));
+    console.log(lastLetter('random word'));
   </script>
   
 </body>
