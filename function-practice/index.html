@@ -16,8 +16,17 @@
       return a * b;
     }
 
+    // Takes a string and capitalize the first letter
+    function capitalize(word){
+      const firstChar = word.charAt(0);
+      const capFirst = firstChar.toUpperCase();
+      const otherChars = word.slice(1);
+
+      return capFirst + otherChars;
+    }
+
     // Output the result to the console
-    console.log(multiply(5,5));
+    console.log(capitalize('random word'));
   </script>
   
 </body>
