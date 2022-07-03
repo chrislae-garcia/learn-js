@@ -5,13 +5,19 @@ const refused = document.querySelector('.refused');
 admitted.textContent = 'Admit: ';
 refused.textContent = 'Refuse: ';
 
+const arrAdmitted = [];
+const arrRefused = [];
+
 // loop starts here
 
 for (let i = 0; i < people.length; i++) {
   if (people[i] == 'Phil' ||
     people[i] == 'Lola') {
-    refused.textContent += people[i] + ', ';
+      arrRefused.push(people[i]);
   } else {
-    admitted.textContent += people[i] + ', ';
+    arrAdmitted.push(people[i]);
   }
 }
+
+refused.textContent += arrRefused.join(', ');
+admitted.textContent += arrAdmitted.join(', ');
