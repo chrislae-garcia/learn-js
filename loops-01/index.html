@@ -29,6 +29,12 @@
   const list = document.createElement('ul');
 
   // Add your code here
+  for (let i of myArray) {
+    let li = document.createElement("li");
+    li.innerHTML = i;
+    console.log(li);
+    list.appendChild(li);
+  }
 
   // Don't edit the code below here!
 
