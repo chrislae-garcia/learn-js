@@ -7,5 +7,11 @@ refused.textContent = 'Refuse: ';
 
 // loop starts here
 
-// refused.textContent += ;
-// admitted.textContent += ;
+for (let i = 0; i < people.length; i++) {
+  if (people[i] == 'Phil' ||
+    people[i] == 'Lola') {
+    refused.textContent += people[i] + ', ';
+  } else {
+    admitted.textContent += people[i] + ', ';
+  }
+}
