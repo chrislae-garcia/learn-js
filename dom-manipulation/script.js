@@ -5,3 +5,8 @@ content.classList.add('content');
 content.textContent = 'This is the glorious text-content!';
 
 container.appendChild(content);
+
+const paraRed = document.createElement('p');
+paraRed.textContent = 'Hey I\'m red!';
+paraRed.style.color = 'red';
+container.appendChild(paraRed);
