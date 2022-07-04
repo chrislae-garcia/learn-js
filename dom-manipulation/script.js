@@ -24,3 +24,7 @@ container.appendChild(divContainer);
 const h1Text = document.createElement('h1');
 h1Text.textContent = 'I\'m in a div';
 divContainer.appendChild(h1Text);
+
+const paraMeToo = document.createElement('p');
+paraMeToo.textContent = 'ME TOO!';
+divContainer.appendChild(paraMeToo);
