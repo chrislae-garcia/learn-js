@@ -18,6 +18,7 @@ container.appendChild(h3Blue);
 
 const divContainer = document.createElement('div');
 divContainer.style.borderColor = 'black';
+divContainer.style.borderStyle = 'solid';
 divContainer.style.backgroundColor = 'pink';
 container.appendChild(divContainer);
 
