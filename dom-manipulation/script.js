@@ -20,3 +20,7 @@ const divContainer = document.createElement('div');
 divContainer.style.borderColor = 'black';
 divContainer.style.backgroundColor = 'pink';
 container.appendChild(divContainer);
+
+const h1Text = document.createElement('h1');
+h1Text.textContent = 'I\'m in a div';
+divContainer.appendChild(h1Text);
