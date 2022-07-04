@@ -44,7 +44,10 @@
     
     let i = 0;
     while (i < phonebook.length) {
-      console.log(phonebook[i].name);
+      if (phonebook[i].name == name) {
+        para.textContent = phonebook[i].number;
+        break;
+      }
       i++;
     }
 
