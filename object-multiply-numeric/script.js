@@ -8,7 +8,7 @@ multiplyNumeric(menu);
 
 function multiplyNumeric(object){
   for (let key in object) {
-    if (typeof object[key] == 'number') object[key] = object[key] * 2;
+    if (typeof object[key] == 'number') object[key] *= 2;
   }
 }
 
