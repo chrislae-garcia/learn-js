@@ -5,6 +5,19 @@
   <title>Object Book Exercise</title>
 </head>
 <body>
-  
+  <script>
+    function Book(title, author, pages, isRead) {
+      this.title = title;
+      this.author = author;
+      this.pages = pages;
+
+      isRead.toLowerCase() == 'y' ? this.status = 'read' : this.status = 'not read yet';
+
+      this.info = () => {
+        return `${this.title} by ${this.author}, ${this.pages} pages, ${this.status}`;
+      }
+    }
+
+  </script>
 </body>
 </html>
